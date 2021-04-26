@@ -1,0 +1,118 @@
+<app-nav></app-nav>
+<hr class=" animate__animated animate__fadeIn animate__delay-1s hr-line">
+<div class="animate__animated animate__fadeIn animate__delay-1s">
+  <div class="container">
+    <p class="atlas-blackReg title-header">GALLERY</p>
+    <!-- <ng-image-slider [images]="imageObject"
+    #nav
+    [imageSize]="{width: 220, height: 150, space: 3}"></ng-image-slider> -->
+
+    <!-- <div class="imageContent">
+      <div *ngFor="let img of try">
+        <img src="../../../../assets/photos/lab1.jpg" alt="sample" width="300" height="200" (click)="openDialog()">
+      </div>
+    </div> -->
+    <div class="content1">
+      <div class="content-marg">
+        <p class="atlas-bold title" (click)="allPhotos($event, photos1)">Untitled Album</p> &nbsp;
+        <p class="atlas-light photo-length">({{photos1.length}} photos)</p>
+      </div>
+      <p class="atlas-light context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit enim perspiciatis maiores eaque ad ipsam similique molestiae adipisci voluptatem, doloribus dicta odit expedita placeat dolore hic, nihil voluptatum. Perspiciatis maxime, unde dolor ab accusamus saepe natus debitis. Voluptas sapiente similique placeat quia nemo dolorem reiciendis voluptatem tenetur amet consequatur!</p>
+      <carousel
+      [height]="'100%'"
+      [margin]="20"
+      [freeScroll]="false"
+      [transitionTimingFunction]="'ease-in-out'"
+      [transitionDuration]="'1000'"
+      [cellsToShow]="3"
+      [cellsToScroll]="1"
+      [cellWidth]="'100%'"
+      [arrowsOutside]="true"
+      [objectFit]="'cover'"
+      [overflowCellsLimit]="1"
+      [dots]="false"
+      >
+        <div class="carousel-cell" *ngFor="let item of photos1">
+        <div class="image atlas-light" (click)="openDialog(item.image)">
+          <img class="image__img" [src]="item.image">
+          <div class="image__overlay image__overlay--primary">
+              <div class="image__title atlas-bold">Sample title here</div>
+              <!-- <p class="image__description">
+                  Short description here
+              </p> -->
+          </div>
+        </div>
+        </div>
+      </carousel>
+    </div>
+
+    <div class="content2">
+      <div class="content-marg">
+        <p class="atlas-bold title" (click)="allPhotos($event, photos2)">Second Untitled Album</p> &nbsp;
+        <p class="atlas-light photo-length">({{photos2.length}} photos)</p>
+      </div>
+      <p class="atlas-light context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit enim perspiciatis maiores eaque ad ipsam similique molestiae adipisci voluptatem, doloribus dicta odit expedita placeat dolore hic, nihil voluptatum. Perspiciatis maxime, unde dolor ab accusamus saepe natus debitis. Voluptas sapiente similique placeat quia nemo dolorem reiciendis voluptatem tenetur amet consequatur!</p>
+      <carousel
+      [height]="'100%'"
+      [margin]="20"
+      [freeScroll]="false"
+      [transitionTimingFunction]="'ease-in-out'"
+      [transitionDuration]="'1000'"
+      [cellsToShow]="3"
+      [cellsToScroll]="1"
+      [cellWidth]="'100%'"
+      [arrowsOutside]="true"
+      [objectFit]="'cover'"
+      [overflowCellsLimit]="1"
+      [dots]="false"
+      >
+        <div class="carousel-cell" *ngFor="let item of photos2">
+          <div class="image atlas-light" (click)="openDialog(item.image)">
+            <img class="image__img" [src]="item.image">
+            <div class="image__overlay image__overlay--primary">
+                <div class="image__title atlas-bold">Sample title here</div>
+
+            </div>
+          </div>
+        </div>
+      </carousel>
+    </div>
+
+    <div class="content2">
+      <div class="content-marg">
+        <p class="atlas-bold title" (click)="allPhotos($event, photos1)">Untitled Album</p> &nbsp;
+        <p class="atlas-light photo-length">({{photos1.length}} photos)</p>
+      </div>
+      <p class="atlas-light context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit enim perspiciatis maiores eaque ad ipsam similique molestiae adipisci voluptatem, doloribus dicta odit expedita placeat dolore hic, nihil voluptatum. Perspiciatis maxime, unde dolor ab accusamus saepe natus debitis. Voluptas sapiente similique placeat quia nemo dolorem reiciendis voluptatem tenetur amet consequatur!</p>
+      <carousel
+      [height]="'100%'"
+      [margin]="20"
+      [freeScroll]="false"
+      [transitionTimingFunction]="'ease-in-out'"
+      [transitionDuration]="'1000'"
+      [cellsToShow]="3"
+      [cellsToScroll]="1"
+      [cellWidth]="'100%'"
+      [arrowsOutside]="true"
+      [objectFit]="'cover'"
+      [overflowCellsLimit]="1"
+      [dots]="false"
+      >
+        <div class="carousel-cell" *ngFor="let item of photos1">
+          <div class="image atlas-light" (click)="openDialog(item.image)">
+            <img class="image__img" [src]="item.image">
+            <div class="image__overlay image__overlay--primary">
+                <div class="image__title atlas-bold">Sample title here</div>
+
+            </div>
+          </div>
+        </div>
+      </carousel>
+    </div>
+  </div>
+
+
+</div>
+<div class="footer">
+  <app-footer></app-footer>
+</div>

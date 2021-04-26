@@ -1,0 +1,20 @@
+<app-nav></app-nav>
+<hr class=" animate__animated animate__fadeIn animate__delay-1s hr-line">
+<div class="container animate__animated animate__fadeIn animate__delay-1s">
+  <p class="atlas-bold title">VACANCIES AND OPPORTUNITIES</p>
+
+  <div class="image-content">
+    <div *ngFor="let item of vacancies">
+      <img [src]="item.image">
+      <div style="line-height: 1.4;">
+        <p class="atlas-bold header">{{item.title}}</p>
+        <p class="atlas-light date">{{item.date}}</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <app-footer></app-footer>
+</div>

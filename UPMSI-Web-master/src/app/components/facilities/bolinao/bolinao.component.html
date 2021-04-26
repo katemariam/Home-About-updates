@@ -1,0 +1,124 @@
+<app-nav></app-nav>
+<div class="container animate__animated animate__fadeIn animate__delay-1s">
+  <app-bolinao-header></app-bolinao-header>
+
+  <div>
+    <div class="center-box">
+      <div class="box-content">
+        <div class="left">
+          <img src="../../../../assets/photos/BML-photos/2-history.jpg">
+        </div>
+
+        <div class="right"  style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+
+            <p class="atlas-blackReg title" style="color: #394e8a;">HISTORY</p>
+            <div style="display: flex;">
+              <p class="atlas-light date">1976-PRESENT</p>
+              <p class="atlas-light location">BOLINAO, PANGASINAN</p>
+
+            </div>
+            <p class="atlas-light history-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vel voluptate culpa error libero temporibus provident at modi delectus quis ea! Illum nulla, pariatur facere accusamus eius aspernatur obcaecati! Tempora obcaecati natus ea sunt vero vel ab quidem quasi voluptatibus, quibusdam rerum a iste! Debitis quae pariatur eaque, necessitatibus temporibus molestias! Voluptates vero facilis, corrupti quibusdam earum odio natus, corrupti quibusdam earum odio natus.</p>
+
+          </div>
+          <p class="atlas-bold read-more"(click)="readMore = true" *ngIf="!readMore">READ MORE</p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div style="display: grid; place-content: center;" *ngIf="readMore">
+      <div class="bottom-content">
+        <p class="atlas-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam voluptas placeat quae voluptatum commodi nostrum repudiandae debitis ducimus suscipit beatae animi, dolorum doloremque magnam cumque fugit nisi sint quia omnis id tempore ratione ipsum rerum eligendi! Libero similique voluptatem laborum eligendi provident, quaerat voluptatibus quos est commodi amet sequi animi!</p>
+      </div>
+    </div>
+
+    <div class="center-box">
+      <app-bolinao-facilities></app-bolinao-facilities>
+    </div>
+
+    <div class="center-box">
+      <app-bolinao-complex></app-bolinao-complex>
+    </div>
+
+    <div class="center-box">
+      <div class="box-content">
+        <div class="left">
+          <img src="../../../../assets/photos/BML-photos/7-highlights.jpg">
+        </div>
+
+        <div class="right">
+
+            <p class="atlas-blackReg title" style="color: #394e8a;">HIGHLIGHTS</p>
+            <div style="display: flex;">
+              <p class="atlas-light" style="color: #394e8a; margin-top: 5px; padding-right: 20px; border-right: 3px solid #5ca361;">ENVIRONMENT</p>
+              <p class="atlas-light" style="color: #394e8a; margin-top: 5px; padding-left: 20px;">PROJECT HIGHLIGHTS</p>
+
+            </div>
+
+            <p class="atlas-bold" style="color: #394e8a; margin-top: 50px;">Giant Clams live in fields at the Bolinao Marine Laboratory</p>
+            <p class="atlas-light" style="margin-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est aliquid tempore atque unde sapiente consequuntur soluta quis ratione natus. Praesentium consectetur laborum iste ullam porro, corporis numquam unde? Laborum nam nobis corporis saepe. Temporibus repellendus totam est consequuntur ad voluptatibus nam eius, perspiciatis at!</p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="center-box2">
+      <div class="onek-wid2">
+        <div class="highlights-marg">
+          <p class="atlas-bold highlights-title">HIGHLIGHTS PREVIEW</p> &nbsp;
+        </div>
+        <carousel
+        [margin]="margin"
+        [freeScroll]="true"
+        [transitionTimingFunction]="'ease-in-out'"
+        [transitionDuration]="'1000'"
+        [height]="'100%'"
+        [cellsToShow]="2"
+        [cellsToScroll]="2"
+        [cellWidth]="'100%'"
+        [arrowsOutside]="true"
+        [objectFit]="'cover'"
+        [overflowCellsLimit]="1"
+        [dots]="false"
+        >
+
+        <div class="carousel-cell" *ngFor="let item of photos1">
+
+          <div class="highlights-content" (click)="openDialog(item.image)">
+            <div class="top">
+              <img [src]="item.image" alt="">
+            </div>
+            <div class="top-10">
+              <p class="atlas-light font-14" style="color: #394e8a;">{{item.lab}}</p>
+              <p class="atlas-bold top-15" style="color: #394e8a; ">{{item.title}}</p>
+            </div>
+          </div>
+        </div>
+
+        </carousel>
+      </div>
+    </div>
+
+
+
+    <div class="center-box">
+      <app-bolinao-contact></app-bolinao-contact>
+    </div>
+
+    <div style="display: grid; place-content: center;">
+      <div class="more-vacancies animate__animated animate__fadeIn animate__delay-1s" (click)="gotoFacilities()">
+        <span style="margin-top: 8px;">
+          <p class="atlas-light">MORE FACILITIES</p>
+        </span>
+        <mat-icon class="arrow">arrow_forward</mat-icon>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <app-footer></app-footer>
+</div>

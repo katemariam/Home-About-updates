@@ -1,0 +1,100 @@
+<app-nav></app-nav>
+<hr class="hr-line animate__animated animate__fadeIn animate__delay-1s">
+<div class="container animate__animated animate__fadeIn animate__delay-1s atlas-light">
+  <div class="content">
+    <div class="atlas-bold title">
+      <p>The MSI in the News</p>
+    </div>
+    <div class="news-box">
+      <app-news-branch></app-news-branch>
+    </div>
+    <div style="color: #384e8a;" class="more-about" (click)="moreNews()">READ MORE ABOUT MSI NEWS</div>
+
+
+    <div class="atlas-bold title title-margin">
+      <p>Announcement</p>
+    </div>
+    <div class="content1">
+      <app-announcement-branch></app-announcement-branch>
+    </div>
+
+    <div style="color: #5da563;" class="more-about" (click)="announcement()">READ MORE ABOUT ANNOUNCEMENT</div>
+
+
+    <div class="content2">
+      <div class="content2-left">
+
+      </div>
+
+      <div class="content2-right">
+        <div>
+          <div class="atlas-blackReg" style="display: flex; flex-direction: column; line-height: 1.2;">
+            <span style="color: white;" class="title-vac">VACANCIES and</span>
+            <span style="color: white;" class="title-vac">OPPORTUNITIES</span>
+          </div>
+
+          <div class="vac-font">
+            <div class="atlas-bold vac-header">
+              <span>Job Opportunity: Marine Scientist</span>
+              <span>Dec. 20, 2020</span>
+            </div>
+            <div class="atlas-light vac-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, veritatis atque dolor dolore inventore... <span class="atlas-bold" style="cursor: pointer; text-decoration: underline;">Read more</span>
+            </div>
+
+            <div class="atlas-bold vac-header">
+              <span>Call for Abstracts: HAB Symposium Conference</span>
+              <span>Dec. 15, 2020</span>
+            </div>
+            <div class="atlas-light vac-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eum atque aliquam fuga at consequuntur!... <span class="atlas-bold" style="cursor: pointer; text-decoration: underline;">Read more</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="more-vac" (click)="moreVacancies()">MORE ABOUT OPPORTUNITIES</div>
+      </div>
+
+    </div>
+
+    <div class="content3">
+      <div  style="background-color: #5da563;" class="content2-right">
+        <div>
+          <div class="atlas-blackReg" style="line-height: 1.2;">
+            <span style="color: white;" class="title-vac">RESEARCH PROJECTS and HIGHLIGHTS</span>
+          </div>
+
+          <div class="vac-font">
+            <div class="content3-header">
+              <span class="atlas-bold">Meet the giant clam fam</span>
+            </div>
+
+            <div class="content3-subheader">
+              <span>June 22, 2018</span>
+              <span>Stephanie Cabigao</span>
+            </div>
+
+            <div class="atlas-light content3-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloribus reprehenderit earum quibusdam ipsa blanditiis, quis enim amet aliquam placeat...
+            </div>
+
+            <div class="content3-readmore">CONTINUE READING</div>
+          </div>
+        </div>
+
+        <div class="more-vac" (click)="moreResearchOpp()">MORE ABOUT RESEARCH PROJECTS/HIGHLIGHTS</div>
+
+      </div>
+
+      <div class="content3-right">
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <app-footer></app-footer>
+</div>
